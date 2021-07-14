@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Created Models Post & Contact.
 class Post(models.Model):
     title=models.CharField(max_length=70)
     body=models.TextField()   

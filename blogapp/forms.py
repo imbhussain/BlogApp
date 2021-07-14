@@ -1,6 +1,8 @@
 from django import forms
 from .models import Post
 
+# Created model form for Post Model
+
 class PostForm(forms.ModelForm):
 
     class Meta:
@@ -10,6 +12,4 @@ class PostForm(forms.ModelForm):
         widgets={
             'title':forms.TextInput(attrs={'class':'form-control'}),
             'body':forms.Textarea(attrs={'class':'form-control'}),  
-            
-           
         }
