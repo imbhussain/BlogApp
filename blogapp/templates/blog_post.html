@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<div class="container my-5 ">
+    <div class="row">
+        <div class="col-sm-6 offset-sm-2">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form}}
+                <br>
+                <br>
+                <input type="Submit" class="btn btn-dark">
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+{%endblock content%}

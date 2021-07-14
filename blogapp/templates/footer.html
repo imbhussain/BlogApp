@@ -1,0 +1,36 @@
+<footer>
+    <div class="container-fluid  text-white p-1 bg-dark" >
+     <div class="row">
+         <div class="col-sm-4 p-2">
+            <p class="text-center small">
+                
+                   
+                        Bamberg, Germany
+                   
+                
+            </p>
+         </div>
+         <div class="col-sm-4 p-2">
+            <p class="text-center small">&copy; All Rights Reserved</p>
+         </div>
+         <div class="col-sm-4 p-2">
+            <p class="text-center small">Date:
+                <script>
+                                    
+                   var currentDate = new Date()
+                    var day = currentDate.getDate()
+                    var month = currentDate.getMonth() + 1
+                    var year = currentDate.getFullYear()
+                    document.write("" + day + "/" + month + "/" + year + "")
+                </script>
+                
+            </p>
+         </div>
+     </div>
+    </div>
+</footer>
+
+<script>
+    var date=new Date().format('m-d-Y h:i:s')
+    document.getElementById('date').innerHTML=date;
+</script>
